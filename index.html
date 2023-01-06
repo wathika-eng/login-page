@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/cfb10a8571.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <title>Sign up or Log in</title>
+  </head>
+  <body>
+    <!-------------------------------------loader------------------------------------------------------------------------>
+    <div id="preloader"></div>
+    <!--------------------------------------form--------------------------------------------------------------->
+    <div class="container">
+      <div class="form-box">
+        <h1 id="title">Sign up</h1>
+        <form>
+          <p class="p1">All fields marked with * are required</p>
+          <div class="input-group">
+            <div class="input-field" id="namefield">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Name*" required />
+            </div>
+            <div class="input-field" id="namefield">
+              <i class="fa-solid fa-user"></i>
+              <input type="e-mail" placeholder="E-mail" />
+            </div>
+            <div class="input-field" id="namefield">
+              <i class="fa-solid fa-user"></i>
+              <input id="phone" type="tel" name="phone" required />
+            </div>
+            <div class="alert alert-info" style="display: none"></div>
+            <div class="input-field">
+              <i class="fa-solid fa-user"></i>
+              <input type="username" placeholder="Username*" required />
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="password"
+                placeholder="Password*"
+                autocomplete="new-password"
+                required
+                pattern="(?=.*\d)(?=.* 
+                [a-z])(?=.*?[0-9])(?=.*?[~`!@#$%\^&*()\-_=+[\]{};:\x27.,\x22\\|/?>]).{4,}"
+                required=""
+                id="id_password"
+              />
+              <i
+                class="far fa-eye"
+                id="togglePassword"
+                style="margin-left: -30px; cursor: pointer"
+              ></i>
+            </div>
+
+            <p class="fpw">
+              <i style="margin-right: 3px" ; class="fa-solid fa-lock"> </i>Lost
+              Password
+              <a href="#">Click here!</a>
+            </p>
+          </div>
+          <div class="btn-field">
+            <button type="button" id="signupBtn">Sign-up</button>
+            <button type="button" id="loginBtn" class="disable">Log-in</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--------------------------------------------javascript----------------------------------------------------------->
+
+    <script src="load.js"></script>
+    <script src="phone.js"></script>
+    <script src="numberformat.js"></script>
+    <script src="showpw.js"></script>
+    <script src="change.js"></script>
+    <script src="c2.js"></script>
+  </body>
+</html>
