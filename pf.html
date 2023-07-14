@@ -14,7 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    <title>Sign up or Log in</title>
+    <title>Forgot password</title>
   </head>
   <body>
     <!-------------------------------------loader------------------------------------------------------------------------>
@@ -22,18 +22,10 @@
     <!--------------------------------------form--------------------------------------------------------------->
     <div class="container">
       <div class="form-box">
-        <h2 id="title">Sign up</h2>
-        <form action="welcome.html" method="post" >
-          <p class="p1">All fields marked with * are required</p>
+        <h1 id="title">Password reset</h1>
+        <form action="welcome.html" method="post">
+          
           <div class="input-group">
-            <div class="input-field" id="names">
-              <i class="fa-solid fa-user"></i>
-              <input type="text" placeholder="Name*" required />
-            </div>
-            <div class="input-field" id="mail">
-              <i class="fa-solid fa-user"></i>
-              <input type="e-mail" placeholder="E-mail" />
-            </div>
             <div class="input-field" id="num">
               <i class="fa-solid fa-user"></i>
               <input id="phone" type="tel" name="phone" required />
@@ -47,7 +39,7 @@
               <i class="fa-solid fa-user"></i>
               <input
                 type="password"
-                placeholder="Password*"
+                placeholder=" New password*"
                 autocomplete="new-password"
                 required
                 pattern="(?=.*\d)(?=.* 
@@ -62,15 +54,9 @@
               > </i>
             </div>
 
-            <p class="fpw">
-              <i style="margin-right: 3px" ; class="fa-solid fa-lock"> </i>Lost
-              Password
-              <a href="/pf.html">Click here!</a>
-            </p>
           </div>
           <div class="btn-field">
-            <button type="button" id="signupBtn">Sign-up</button>
-            <button type="submit" id="loginBtn" >Log-in</button>
+            <button type="submit" id="loginBtn" href="#login" >Log-in back</button>
           </div>
         </form>
       </div>
@@ -82,10 +68,6 @@
     <script src="phone.js"></script>
     <script src="numberformat.js"></script>
     <script src="showpw.js"></script>
-    <script src="change.js"></script>
-    <script src="c2.js"></script>
-    <script>
-      alert("Under-Development");
-    </script>
+
   </body>
 </html>
